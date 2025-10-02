@@ -1,0 +1,20 @@
+
+<div class="parent">
+    <div class="login-card">
+            <h2>Login</h2>
+            <form [formGroup]="loginForm">
+                <div class="mb-3">
+                    <input type="email" formControlName="EmailId" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="mb-3">
+                    <input type="password" formControlName="Password" class="form-control" placeholder="Password" required>
+                </div>
+                <div class="d-grid">
+                    <button type="submit" (click)="onLogin()" class="btn btn-login text-white">Login</button>
+                </div>
+                <div class="links">
+                    <a href="#">Forgot Password?</a> | <a href="#">Sign Up</a>
+                </div>
+            </form>
+        </div>
+</div>
